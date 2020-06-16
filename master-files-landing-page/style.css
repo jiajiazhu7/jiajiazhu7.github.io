@@ -1,0 +1,205 @@
+/* base style */
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, 
+section, 
+footer {
+    flex-grow: 1;
+    margin: 2px;  
+}
+
+.article h1{
+    font-size: 5rem;
+}
+
+.article p{
+    font-size: 2.5rem;
+    
+}
+
+.form {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #eee;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.buttongreen{
+    background-color: #57eeab;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form a {
+    text-decoration: none;
+    color: #ff8480;
+}
+
+.form h2{
+    font-size: 1.5rem;
+}
+
+
+
+.header img{
+    padding-bottom: 1rem;
+    height: auto;
+    max-width: 100px;
+}
+
+.calculate-form, 
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 115px 1fr auto;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: #f7f7ff;
+    background-image: url(images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 50%;
+    max-width: 2000px;
+    margin: auto 0;
+}
+
+.section {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, minmax(400px, 600px));
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 3rem 0px;
+
+}
+
+
+.footer {
+    padding: 1rem 1rem;
+    margin: 0 -1rem;
+    background-color: #fffd8c;
+}
+
+.footer-content {
+    margin: 0.5rem 0;
+}
+
+.footer-content h4{
+    margin-bottom: 0.75rem;
+}
+
+.calculate-form {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.calculate-form fieldset input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: space-between;
+}
+.form-text-city {
+    display: block;
+    width: 30%;
+    flex-grow: 1;
+}
+
+.form-text {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eee;
+    border: 0;
+    border-radius: 8px;
+}
+
+.buttonred {
+    background-color: #ff8480;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    width: 35%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    float: right;
+    justify-content: space-around;
+
+}
+
+.social-link {
+    padding: 1rem;
+}
+
+
+@media(max-width: 679px){
+    .form-group{
+        margin-right: 0px;
+    }
+    .calculate-form{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1023px){
+    .main{
+        background-position: center 35%;
+        background-size: 50%;
+    }
+    .section{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        justify-content: center;
+        align-content: space-between;
+        min-height: 1000px;
+    }
+}
