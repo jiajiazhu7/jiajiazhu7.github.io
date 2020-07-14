@@ -1,0 +1,557 @@
+/* whole page set */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Eliminate the default format */
+a {
+    text-decoration: none;
+}
+
+/* Eliminate the default format */
+li {
+    list-style: none;
+}
+
+/* Nice font */
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Coffee shop's color */
+body {
+    background-color: #967878;
+}
+
+/* Minimalism navigation bar */
+.nav {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+
+/* Mini icons */
+.search {
+    float: right;
+}
+
+.nav a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* icons space */
+.nav ul {
+    padding-right: 10%;
+    text-align: right;
+    clear: both;
+}
+
+.nav li {
+    width: 8rem;
+    display: inline-block;
+}
+
+.header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* second nice font */
+.cont {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Intro part- paragraph button pic*/
+.p1 {
+    padding-top: 60px;
+    font-size: 0;
+}
+
+/* text align set */
+.p1 .left {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.8rem;
+}
+
+.pa .left {
+    margin-right: 10%;
+}
+
+.pb .left {
+    margin-left: 10%;
+}
+
+.p1 h2 {
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+.p1 p {
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* button set radius and animation */
+.p1 a {
+    background-color: orange;
+    color: #ffffff;
+    padding: 5px 30px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* sales picture animation set */
+.p1 a:hover {
+    transform: scale(1.2);
+}
+
+.p1 .right {
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right img {
+    width: 100%;
+}
+
+.right img:hover {
+    animation: 0.4s imgh ease-in-out;
+}
+
+/* user interactive movement */
+@keyframes imgh {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* footer have two part nav and social media icons */
+.shang {
+    background-color: #4c4246;
+    text-align: center;
+    padding: 50px 10%;
+    line-height: 2;
+    position: relative;
+    margin-top: 50px;
+}
+
+/* two different gray make it apparent */
+.xia {
+    background-color: #3d3d42;
+    padding: 20px 10%;
+    text-align: right;
+}
+
+.xia a {
+    margin-left: 20px;
+}
+
+.shang a {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* stick at the bottom */
+.top {
+    position: absolute;
+    right: 10%;
+}
+
+/* about page */
+.p2 h2 {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 160px;
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.p2 img {
+    width: 100%;
+}
+
+/* space between parts */
+.p3 {
+    padding: 10px 0;
+    font-size: 0;
+}
+
+/* pic and artical half half */
+.p3 .left {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.p3 .right {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+    font-size: 1rem;
+}
+
+.p3 img {
+    width: 100%;
+}
+
+.p3 p {
+    margin: 80px 0;
+    line-height: 2.5;
+}
+
+/* three categories */
+.p4 {
+    text-align: center;
+}
+
+/* pictures galary set placed evenly space */
+.card {
+    float: left;
+    text-align: center;
+    width: 30%;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+/* shop page- text on the picture set */
+.desc {
+    line-height: 1.2rem;
+    font-size: 1rem;
+    height: 2.4rem;
+    overflow: hidden;
+}
+
+/* exaggerated animation rotation effect */
+.card img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.card img:hover {
+    transform: rotate(360deg);
+}
+
+/* adjust pics galary */
+.card:nth-child(2) {
+    margin: 0 5%;
+}
+
+.card h5 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* relate pic and text */
+.p5 {
+    position: relative;
+    margin-bottom: 90px;
+    margin-top: 80px;
+}
+
+.p5-text {
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+    font-size: 1.4rem;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+/* second button set contrasting colors */
+.btn {
+    color: #000000;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 40px 0;
+}
+
+.img {
+    width: 100%;
+    margin: 80px 0;
+    clear: both;
+}
+
+.search a {
+    margin: 0 10px;
+}
+
+/* responsive set based on UX fields */
+@media(max-width:1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:800px) {
+    .logo{
+        width: 40%;
+    }
+
+    .nav ul {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .cont {
+        width: 100%;
+    }
+    /* switch the background color to fit small screen */
+    body {
+        background-color: #ffffff;
+    }
+
+    .p2 h2 {
+        padding-top: 0;
+    }
+
+    /* use auto easy way to fit */
+    .p3 .left {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .p3 .right {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .p3 p {
+        line-height: 2;
+    }
+
+    /* pics galary arrangement change */
+    .p4 .p4a .card {
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .p5 {
+        margin: 0;
+    }
+
+    /* contrast with background color */
+    .p5-text {
+        color: #000000;
+    }
+
+    .p4 .p4b .card {
+        width: 40%;
+        clear: both;
+        margin: 30px 1%;
+    }
+
+    .p4 .p4b img {
+        width: 40%;
+        float: left;
+    }
+
+    .desc {
+        height: 8rem;
+        line-height: 2rem;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .card .text {
+        float: left;
+        width: 50%;
+        padding: 0 5%;
+    }
+
+    .center {
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    /* picture blur make the text still readable */
+    .p5 img {
+        filter: blur(5px);
+    }
+
+    .p1 {
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    /* way to different style between size */
+    .p1 .right {
+        width: 100%;
+        filter: blur(5px);
+    }
+
+    .p1 .left {
+        position: absolute;
+        left: 10%;
+        color: #ffffff;
+        width: 70%;
+        z-index: 100;
+    }
+
+    /* pic animation */
+    .pa .left {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .pb {
+        text-align: right;
+        margin-bottom: 50%;
+    }
+
+    .pb .left {
+        height: 50%;
+        margin-top: 50%;
+    }
+
+    .pb1 {
+        height: 100%;
+    }
+
+    /* contrast to the background */
+    .pb2 {
+        color: #000000;
+    }
+}
+
+@media(max-width:500px) {
+    html {
+        font-size: 12px;
+    }
+    
+    .logo {
+        width: 60%;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    /* adjust the font fit screen */
+    .nav a {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    .p1 {
+        margin-top: 1rem;
+        margin-bottom: 150%;
+    }
+
+    /* one column style */
+    .p1 .left {
+        color: #000000;
+        top: 100%;
+        width: 80%;
+        text-align: center;
+    }
+
+    .pa .left {
+        transform: none;
+    }
+
+    .p1 p {
+        line-height: 2;
+    }
+
+    /* main picture clear again since the text below the pic */
+    .p1 .right {
+        filter: none;
+    }
+
+    .pb .left {
+        margin: 0;
+    }
+
+    .pb1 {
+        height: auto;
+    }
+
+    .p2 h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .card {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .p5-text {
+        width: 80%;
+    }
+
+    /* picture galaries one column style*/
+    .p4.p4b .img {
+        width: 70%;
+        float: none;
+    }
+
+    /* appropiate text adjustment */
+    .card .text {
+        float: none;
+        margin: 0 auto;
+        font-size: 12px;
+        width: 80%;
+        line-height: 2;
+    }
+
+    .desc {
+        font-size: 12px;
+        line-height: 15px;
+        height: 45px;
+    }
+
+    /* keep button content center */
+    .center {
+        text-align: center;
+    }
+
+    /* screen apply */
+    @media(max-width: 400px) {
+        html {
+            font-size: 10px;
+        }
+    }
+    @media(max-width: 300px) {
+        html {
+            font-size: 8px;
+        }
+    }
+}
